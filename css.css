@@ -1,0 +1,216 @@
+body{
+    background-color: rgb(99, 99, 211);
+    
+}
+.conteudo1{
+    display: flex;
+   justify-content: space-around;
+   margin-bottom: 20px;
+   
+}
+.conteudo2{
+    display: flex;
+   justify-content: space-around;
+   
+   
+}
+
+.cards{
+    width: 200px;
+    height: 350px;
+    background-color: #fff;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    border-radius: 10px;
+   
+    
+}
+.nome{
+    
+    border: 1px solid #000;
+    width: 85%;
+    height: 35px;
+    top: 10px;
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+    justify-content: center;
+    left: 10px;
+    
+}
+
+p{
+    top: -5px;
+    position: relative;
+    width: 100%;
+    
+
+
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+    
+}
+.tipo1{
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    display: flex;
+    border: none;
+    margin-inline: 5px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: #fff;
+   
+   
+}
+.fogo{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 118, 6);
+    display: flex;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+    left: 30px;
+    position: relative;
+    padding-top: 10px;
+    color: #fff;
+}
+.agua{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(6, 114, 255);
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    left: 30px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: #fff;
+}
+#inseto{
+    background-color: greenyellow;
+    text-align: center;
+    justify-content: center;
+    left: 30px;
+    position: relative;
+    color: #fff;
+    padding-top: 10px;
+}
+.tipo2{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(253, 23, 184);
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: #fff;   
+}
+#verde:hover{
+background-color: rgb(50, 184, 50);
+height: 370px;
+color: #fff;
+}
+#verde ,#vermelho , #azul , .nome{
+    transition: all 100ms ease-out;
+}
+#vermelho:hover{
+    background-color: rgb(223, 141, 34);
+height: 370px;
+color: #fff;
+}
+#azul:hover{
+    background-color: rgb(94, 190, 214);
+height: 370px;
+color: #fff;
+}
+.tipos{
+   
+    display: flex;
+    top: 20px;
+    position: relative;
+    
+}
+.nome:hover{
+    border: 1px solid #ffffff;
+}
+.p{
+    overflow: auto;
+    overflow-y: scroll;
+    max-height: 130px;
+    top: 25px;
+    position: relative;
+    
+}
+#fogo{
+    background-color: rgb(255, 118, 6);
+}
+#fly{
+    background-color: #a8a8a8;
+}
+.p::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+    
+}
+.p::-webkit-scrollbar-thumb{
+    background-color: #c4c4c4;
+    border-radius: 15px;
+}
+@media screen and (max-width: 600px) {
+    .conteudo1, .conteudo2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 90%;
+        margin-top: 5px;
+        
+    }
+    button{
+        position: relative;
+        left: 70px;
+    }
+    .fogo , .agua , #inseto{
+        position: relative;
+        left: 120px;
+    }
+}
+
+/* Para telas maiores que 600px e menores que 1024px (tamanhos de tablets), os cards serão exibidos em duas colunas */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .conteudo1, .conteudo2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .cards {
+        width: 45%;
+        margin-top: 5px;
+    }
+    button{
+        position: relative;
+        left: 10px;
+    }
+    .fogo , .agua , #inseto{
+        position: relative;
+        left: 60px;
+    }
+}
+
