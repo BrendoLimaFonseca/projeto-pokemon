@@ -4,19 +4,17 @@ body{
 }
 .conteudo1{
     display: flex;
-   justify-content: space-around;
+  position: relative;
    margin-bottom: 20px;
-    justify-content: center;
+   justify-content: center;
    align-items: center;
    
 }
 .conteudo2{
     display: flex;
-   justify-content: space-around;
     justify-content: center;
-   align-items: center;
-   
-   
+    align-items: center;
+  
 }
 
 .cards{
@@ -24,9 +22,11 @@ body{
     height: 350px;
     background-color: #fff;
     position: relative;
-    top: 10px;
+    top: 3vh;
     left: 5px;
     border-radius: 10px;
+    margin-left: 4vw;
+   
    
     
 }
